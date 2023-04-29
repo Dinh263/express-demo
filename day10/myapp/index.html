@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Websocket</title>
+        <script>
+            var ws = new WebSocket('ws://admins-macbook-pro-2.local:8000')
+            ws.onopen = function(){
+                ws.send('Hello from the client');
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Websocket tutorial</h1>
+    </body>
+</html>
